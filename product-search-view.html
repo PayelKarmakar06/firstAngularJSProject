@@ -1,0 +1,9 @@
+<h3 class="pad-left">Product Search View</h3>
+<table class="table">
+	<tr ng-repeat = "x in search()">
+		<td><input type = "radio" ng-value="(($index))" ng-model = "$parent.prodName" ng-click = "product.setProduct(x)"/></td>
+		<td>{{x.productNumber}}</td>
+		<td><strong><em>{{x.description}}</em></strong></td>
+		<td>Standard Sell Price: {{x.sellingPrice | currency}}</td>
+	</tr>
+</table>

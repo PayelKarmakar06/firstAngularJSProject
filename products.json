@@ -1,0 +1,56 @@
+[{
+	"productNumber": "30986",
+	"description": "Hair pin",
+	"sellingPrice": "10.00",
+	"discountedPrice": "8.00",
+	"quantityInStock": "15"
+},
+{
+	"productNumber": "20286",
+	"description": "Paint brush for painting",
+	"sellingPrice": "42.00",
+	"discountedPrice": "38.00",
+	"quantityInStock": "29"
+},
+{
+	"productNumber": "10231",
+	"description": "Paint brush for room decor",
+	"sellingPrice": "185.00",
+	"discountedPrice": "165.00",
+	"quantityInStock": "568"
+},
+{
+	"productNumber": "8173",
+	"description": "Plates made of steel",
+	"sellingPrice": "152.00",
+	"discountedPrice": "118.00",
+	"quantityInStock": "68"
+},
+{
+	"productNumber": "10486",
+	"description": "USB 2.0 with 2 mt long wire",
+	"sellingPrice": "15.00",
+	"discountedPrice": "13.60",
+	"quantityInStock": "52"
+},
+{
+	"productNumber": "9832",
+	"description": "Night gown",
+	"sellingPrice": "103.3",
+	"discountedPrice": "100",
+	"quantityInStock": "45"
+},
+{
+	"productNumber": "3827",
+	"description": "Philips Headphone",
+	"sellingPrice": "195.00",
+	"discountedPrice": "185.00",
+	"quantityInStock": "9"
+},
+{
+	"productNumber": "1027",
+	"description": "Bedsheet",
+	"sellingPrice": "85.00",
+	"discountedPrice": "82.00",
+	"quantityInStock": "52"
+}]
