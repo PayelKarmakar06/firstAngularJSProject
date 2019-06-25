@@ -3,25 +3,25 @@
 	app.directive('storeTab', function(){
 		return{
 			restrict: 'E',
-			templateUrl: "store-tab.html"
+			templateUrl: "/src/app/store/store-tab.html"
 		};
 	});
 	app.directive('storeLogin', function(){
 		return{
 			restrict: 'E',
-			templateUrl: "store-login.html"
+			templateUrl: "/src/app/auth/store-login.html"
 		};
 	});
 	app.directive('productSearchView', function(){
 		return{
 			restrict: 'E',
-			templateUrl: "product-search-view.html"
+			templateUrl: "/src/app/product/product-search-view.html"
 		};
 	});
 	app.directive('productDetails', function(){
 		return{
 			restrict: 'E',
-			templateUrl: "product-details.html"
+			templateUrl: "/src/app/product/product-details.html"
 		};
 	});
 })();

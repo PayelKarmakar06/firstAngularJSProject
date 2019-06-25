@@ -9,7 +9,7 @@
 		store.displayLogin = true;
 		store.displayHome = false;
 		store.storeName = "";
-		$http.get('users.json').success(function(data){
+		$http.get('/src/app/auth/users.json').success(function(data){
 			store.users = data;
 		});
 		store.checkUser = function(){
@@ -39,9 +39,8 @@
 		prod.productSearchView = false;
 		prod.productDetails = "";
 		var promiseFunc = function(){
-			$http.get('products.json').then(function(data){
-				prod.productData = data;
-				deferred.resolve(prod);
+			$http.get('/src/app/product/products.json').then(function(data){
+				deferred.resolve(data);
 			}, function error(err){
 				console.log(err);
 				deferred.reject(err);
@@ -49,14 +48,15 @@
 			return deferred.promise;
 		}
 		$scope.search = function() {
-			promiseFunc().then(function(data){
-				alert("inside");
+			promiseFunc().then(function(prod){
 				var searchResult = [];
-				angular.forEach(prod.productData, function(product){
+				console.log('$scope.query', $scope.query)
+				angular.forEach(prod.data, function(product){
 					if ((product.productNumber.toString().indexOf($scope.query) != -1) || (product.description.toLowerCase().indexOf($scope.query.toLowerCase()) != -1) ){
 						searchResult.push(product);
 					}
 				});
+				console.log('searchResult', searchResult)
 				if(searchResult.length > 1) {
 					prod.productDetailsView = false;
 					prod.productSearchView = true;
