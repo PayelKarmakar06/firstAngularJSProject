@@ -1,0 +1,11 @@
+<h3 class="pad-left">Product Details</h3>
+<table class="table" border= "1">
+	<tr ng-repeat = "product in product.productDetails.">
+		<td>{{product.productNumber}}</td>
+		<td><strong><em>{{product.description}}</em></strong></td>
+		<td>Stock on Hand: {{product.quantityInStock}}</td>
+		<td>Standard Sell Price: <strong>{{product.sellingPrice | currency}}</strong></td>
+		<td>Promotional Sell Price: {{product.discountedPrice | currency}}</td>	
+	</tr>
+</table>
+
